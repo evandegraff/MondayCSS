@@ -1,0 +1,22 @@
+* {
+  border: 1px solid black;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 64px);
+}
+.square {
+  width: 64px;
+  height: 64px;
+  background: black;
+}
+.square:nth-child(16n + 1),
+.square:nth-child(16n + 3),
+.square:nth-child(16n + 5),
+.square:nth-child(16n + 7),
+.square:nth-child(16n + 10),
+.square:nth-child(16n + 12),
+.square:nth-child(16n + 14),
+.square:nth-child(16n + 16) {
+  background: white;
+}
